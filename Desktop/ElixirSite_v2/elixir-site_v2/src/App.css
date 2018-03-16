@@ -40,10 +40,15 @@
     height: 40px;
     background-color: #222 !important;
     color: white;
+    margin-top: 10px;
+
+    position: fixed;
+    bottom: 0;
 }
 
 @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
 

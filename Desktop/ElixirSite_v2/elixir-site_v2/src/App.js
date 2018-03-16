@@ -3,8 +3,11 @@ import React, { Component } from 'react';
 
 import './App.css';
 
+
 import Header from './Components/Header';
 import Footer from "./Components/Footer";
+import TestContent from "./Components/TestContent";
+import Master from "./Components/Master/Master";
 
 
 class App extends Component {
@@ -12,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
           <Header/>
-
+          <Master/>
           <Footer/>
       </div>
 
