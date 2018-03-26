@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import logo from '../elixirLogo.jpg';
 
+
 //import Master Component, so our header can interact with Master.state. This is what makes the navigation work.
 import Master from "./Master/Master";
+import App from "../App";
 
 export default class Header extends Component{
     render(){
@@ -23,11 +25,9 @@ export default class Header extends Component{
                             <img src={logo} className="App-logo" alt="logo" />
                             <ul className="right hide-on-med-and-down">
                                 {/*Drink link - sets Master.state to "featured-drinks"*/}
-                                <li><button onClick={function(){
-                                    console.log(Master.state().page);
-                                    Master.state().page="featured-drinks";
-                                    console.log(Master.state().page);
-                                }}><h5>The People</h5></button></li>
+                                <li><button onClick={
+                                    this.props.navigator("people")
+                                }><h5>The People</h5></button></li>
 
                                 <li><button><h5>The Drinks</h5></button></li>
                                 {/*Dropdown Trigger*/}

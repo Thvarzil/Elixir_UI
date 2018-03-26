@@ -7,23 +7,26 @@ import FeaturedDrinks from "../Drinks/FeaturedDrinks";
 import BrunchMenu from "../Menu/BrunchMenu";
 
 export default class Master extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {page: "landing"};
-    }
 
     render(){
-       const page = this.state.page;
 
-       if(page==="landing"){
+
+       if(this.props.page==="landing"){
            return(
                <Landing/>
            );
        }
-       if(page==="featured-drinks"){
+       if(this.props.page==="drinks"){
            return(
                <FeaturedDrinks/>
            );
+       }
+       else{
+           return(
+               <div className={"frosted main-content"}>
+                   <h1>There was an error. this.props.page is freaking out.</h1>
+               </div>
+           )
        }
     }
 }
