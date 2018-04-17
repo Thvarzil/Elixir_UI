@@ -48,13 +48,19 @@
 
 #dropdown1{
     align-content: center;
-    color: white;
-    width: 200px !important;
-    background-color: #424242;
+    color: white !important;
+    width: 170px !important;
+    background-color: #292929;
+    overflow-y: -webkit-paged-y;
 }
 
 #dropdown1 li{
     margin-left: 20px;
+    color: white !important;
+}
+
+#dropdown1 li:hover{
+    background-color: #424242;
 }
 
 @keyframes App-logo-spin {

@@ -11,7 +11,7 @@ export default class Header extends Component{
                 <header className="App-header">
                     {/*Dropdown Structure*/}
                     <ul id="dropdown1" className="dropdown-content">
-                        <li><h4>The Food</h4></li>
+
                         <li><a href={""}><h5>Our Brunch</h5></a></li>
                         <li className={"divider"}> </li>
                         <li><a href={""}>Trio Lunch</a></li>

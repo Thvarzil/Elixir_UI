@@ -14,6 +14,8 @@ export default class App extends Component {
 
     }
 
+
+    //Navigation/redirect functions
     navigateToLanding = (event) => {
         event.preventDefault();
         console.log(event.target.id);
@@ -42,14 +44,6 @@ export default class App extends Component {
         console.log(this.state.page);
     };
 
-    // navigateTemplate = (event) => {
-    //     event.preventDefault();
-    //     console.log(event.target.id);
-    //     this.setState({page: "target"});
-    //     console.log(this.state.page);
-    // };
-
-
     render() {
         return (
             <div className="App">
@@ -65,14 +59,17 @@ export default class App extends Component {
                     </ul>
                     <nav className={"nav-wrapper"}>
                         <div className={"nav-contents"}>
+                            {/*logo redirects to landing*/}
                             <button id={'landing'} onClick={this.navigateToLanding}><img src={logo} className="App-logo" alt="logo" /></button>
-                            <ul className="right hide-on-med-and-down">
+                            <ul className="right hide-on -med-and-down">
+                                {/*Link to People page*/}
                                 <li><button onClick={this.navigateToPeople}><h5>The People</h5></button></li>
-                                {/*Drink link - sets Master.state to "featured-drinks"*/}
+                                {/*Link to Drinks page*/}
                                 <li><button onClick={this.navigateToDrinks}><h5>The Drinks</h5></button></li>
                                 {/*Dropdown Trigger*/}
                                 <li><button className="dropdown-button" data-activates="dropdown1"><h5>The Food</h5></button></li>
                                 <li><span><h5>||</h5></span></li>
+                                {/*Link to Locaiton page1q*/}
                                 <li><button onClick={this.navigateToLocation} ><h5>Find Us</h5></button></li>
 
                             </ul>
