@@ -53,7 +53,7 @@ export default class App extends Component {
                     <ul id="dropdown1" className="dropdown-content">
                         <li><a href={""}><h5>Our Brunch</h5></a></li>
                         <li className={"divider"}> </li>
-                        <li><a href={"http://www.cottonwood.triodining.com/lunch"}>Trio Lunch</a></li>
+                        {/*<li><a href={"http://www.cottonwood.triodining.com/lunch"}>Trio Lunch</a></li>*/}
                         <li><a href={"http://www.cottonwood.triodining.com/dinner"}>Trio Dinner</a></li>
                         <li><a href={"http://www.cottonwood.triodining.com/dessert"}>Trio Desserts</a></li>
                     </ul>

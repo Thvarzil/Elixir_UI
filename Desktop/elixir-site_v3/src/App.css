@@ -15,6 +15,11 @@
     text-align: left;
 }
 
+#landing{
+    background-color: #222;
+    border: none;
+}
+
 .nav-wrapper{
     bottom: 0;
     padding: 25px;

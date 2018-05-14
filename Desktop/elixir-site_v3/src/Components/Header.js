@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from '../elixirLogo.jpg';
 
 
-
 export default class Header extends Component{
     render(){
 
@@ -10,7 +9,7 @@ export default class Header extends Component{
             <div>
                 <header className="App-header">
                     {/*Dropdown Structure*/}
-                    <ul id="dropdown1" className="dropdown-content">
+                    <ul id="dropdown1" className="dropdown-content" >
 
                         <li><a href={""}><h5>Our Brunch</h5></a></li>
                         <li className={"divider"}> </li>

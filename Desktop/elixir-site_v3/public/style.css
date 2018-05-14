@@ -56,6 +56,30 @@ body {
     width: 60%;
     box-shadow: 5px 3px 30px black;
     overflow: hidden;
+    z-index: -2;
+}
+
+.menu-box{
+    margin-left: 20%;
+    margin-right:20%;
+    padding: 0px;
+    border-radius: 7px;
+    background-color: white;
+
+    overflow: hidden;
+}
+
+#dropdown1{
+    z-index: -1 !important;
+    border-radius: 4px;
+}
+
+.navcontents button:active{
+    background-color: #222 !important;
+}
+
+.menu-page{
+    margin: 0px;
 }
 
 .info
